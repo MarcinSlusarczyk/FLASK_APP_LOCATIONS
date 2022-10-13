@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<div class="formbold-main-wrapper">
+  <div class="formbold-form-wrapper">
+    <form method="POST">
+
+      <div class="formbold-mb-5">
+        <label for="qty_car" class="formbold-form-label"> liczba pojazdów </label>
+        <input
+          type="number"
+          name="qty_car"
+          id="qty_car"
+          value="{{ rows[0][1] }}"
+          class="formbold-form-input"
+        />
+      </div>
+      <div class="formbold-mb-5">
+        <label for="address_warehouse" class="formbold-form-label"> Adres magazynu </label>
+        <input
+          type="address"
+          name="address_warehouse"
+          id="address_warehouse"
+          value="{{ rows[0][2] }}"
+          class="formbold-form-input"
+        />
+      </div>
+
+      <div class="formbold-mb-5">
+        <label for="address_city" class="formbold-form-label"> Adres miejscowości</label>
+        <input
+          type="address"
+          name="address_city"
+          id="address_city"
+          value="{{ rows[0][3] }}"
+          class="formbold-form-input"
+        />
+      </div>
+
+        <div class="formbold-mb-5">
+        <label for="hour_start" class="formbold-form-label">Godzina od:</label>
+        <input
+          type="time"
+          name="hour_start"
+          id="hour_start"
+          value="{{ rows[0][4] }}"
+          class="formbold-form-input"
+        />
+      </div>
+
+       <div class="formbold-mb-5">
+        <label for="hour_stop" class="formbold-form-label">Godzina do:</label>
+        <input
+          type="time"
+          name="hour_stop"
+          id="hour_stop"
+          value="{{ rows[0][5] }}"
+          class="formbold-form-input"
+        />
+      </div>
+      <div>
+        <button type="submit" class="formbold-btn-edit" onclick=''>DODAJ</button>
+      </div>
+    </form>
+    <br>
+    <a href="/"><button class="formbold-btn-delete">Wróć na stronę główną</button></a>
+  </div>
+</div>

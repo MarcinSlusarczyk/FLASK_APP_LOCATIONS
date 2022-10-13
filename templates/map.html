@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b98e91f26f775e4e6c04098dbdc9857c {
+                    position: relative;
+                    width: 1200.0px;
+                    height: 600.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b98e91f26f775e4e6c04098dbdc9857c" ></div>
+        
+</body>
+<script>    
+    
+            var map_b98e91f26f775e4e6c04098dbdc9857c = L.map(
+                "map_b98e91f26f775e4e6c04098dbdc9857c",
+                {
+                    center: [51.7687323, 19.4569911],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_09585da1cd52df2fd7634fde53e87ffd = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b98e91f26f775e4e6c04098dbdc9857c);
+        
+    
+            var marker_1b9005b559d50fda949b1baf1c4a69a8 = L.marker(
+                [52.2301933, 18.2521112],
+                {}
+            ).addTo(map_b98e91f26f775e4e6c04098dbdc9857c);
+        
+    
+            var icon_82cf479c74576eaf30c88b4f0a3f66ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b9005b559d50fda949b1baf1c4a69a8.setIcon(icon_82cf479c74576eaf30c88b4f0a3f66ac);
+        
+    
+        var popup_92276352e71ace9fe94d43e7bd6bf3bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf96fc208a3bc1274a183cc9eb34b3d0 = $(`<div id="html_bf96fc208a3bc1274a183cc9eb34b3d0" style="width: 100.0%; height: 100.0%;">Magazyn - Konin</div>`)[0];
+                popup_92276352e71ace9fe94d43e7bd6bf3bd.setContent(html_bf96fc208a3bc1274a183cc9eb34b3d0);
+            
+        
+
+        marker_1b9005b559d50fda949b1baf1c4a69a8.bindPopup(popup_92276352e71ace9fe94d43e7bd6bf3bd)
+        ;
+
+        
+    
+    
+            var marker_34df4dcf275d74ae49f6ef6b54d71dc2 = L.marker(
+                [51.1101596, 17.027849],
+                {}
+            ).addTo(map_b98e91f26f775e4e6c04098dbdc9857c);
+        
+    
+            var icon_cfcff4aff4cd6f6af87f94f122540b22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_34df4dcf275d74ae49f6ef6b54d71dc2.setIcon(icon_cfcff4aff4cd6f6af87f94f122540b22);
+        
+    
+        var popup_5619f079d9f5d5c189e902e8b6f606f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46f3c00420cce6b797037efae6e5010f = $(`<div id="html_46f3c00420cce6b797037efae6e5010f" style="width: 100.0%; height: 100.0%;">rzeżnicza, wrocław</div>`)[0];
+                popup_5619f079d9f5d5c189e902e8b6f606f7.setContent(html_46f3c00420cce6b797037efae6e5010f);
+            
+        
+
+        marker_34df4dcf275d74ae49f6ef6b54d71dc2.bindPopup(popup_5619f079d9f5d5c189e902e8b6f606f7)
+        ;
+
+        
+    
+    
+            var marker_e15f4dc4fecae98f8485c839d11067c7 = L.marker(
+                [50.5892698, 16.8111518],
+                {}
+            ).addTo(map_b98e91f26f775e4e6c04098dbdc9857c);
+        
+    
+            var icon_3d7f8e79789b1fb920896b8ffab922d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e15f4dc4fecae98f8485c839d11067c7.setIcon(icon_3d7f8e79789b1fb920896b8ffab922d1);
+        
+    
+        var popup_cc8a5d8b9f542aba4010f514c0ef0771 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcfdc2dd12d381c1bf0e19c2435efe81 = $(`<div id="html_dcfdc2dd12d381c1bf0e19c2435efe81" style="width: 100.0%; height: 100.0%;">ząbkowice śląskie</div>`)[0];
+                popup_cc8a5d8b9f542aba4010f514c0ef0771.setContent(html_dcfdc2dd12d381c1bf0e19c2435efe81);
+            
+        
+
+        marker_e15f4dc4fecae98f8485c839d11067c7.bindPopup(popup_cc8a5d8b9f542aba4010f514c0ef0771)
+        ;
+
+        
+    
+    
+            var marker_f632c179e6bb845293b34f0ed0ac543b = L.marker(
+                [52.2319581, 21.0067249],
+                {}
+            ).addTo(map_b98e91f26f775e4e6c04098dbdc9857c);
+        
+    
+            var icon_ade5634214ac1ad90cf5b87222520ef3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f632c179e6bb845293b34f0ed0ac543b.setIcon(icon_ade5634214ac1ad90cf5b87222520ef3);
+        
+    
+        var popup_7c075839c5beced9adc8a2e384b4929b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c52ae918237fda6780f761806f60b4c7 = $(`<div id="html_c52ae918237fda6780f761806f60b4c7" style="width: 100.0%; height: 100.0%;">Warszawa</div>`)[0];
+                popup_7c075839c5beced9adc8a2e384b4929b.setContent(html_c52ae918237fda6780f761806f60b4c7);
+            
+        
+
+        marker_f632c179e6bb845293b34f0ed0ac543b.bindPopup(popup_7c075839c5beced9adc8a2e384b4929b)
+        ;
+
+        
+    
+    
+            var poly_line_99dbf346b2df3625bc4c3ae90990eb23 = L.polyline(
+                [[52.2301933, 18.2521112], [51.1101596, 17.027849], [50.5892698, 16.8111518], [52.2319581, 21.0067249], [52.2301933, 18.2521112]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "10", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b98e91f26f775e4e6c04098dbdc9857c);
+        
+    
+            var marker_37da6facf9bb1dcb0e79d77e7aec1bf6 = L.marker(
+                [52.4006632, 16.91973259178088],
+                {}
+            ).addTo(map_b98e91f26f775e4e6c04098dbdc9857c);
+        
+    
+            var icon_afe6e2da55bf2e05e71e2dfa6a495053 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_37da6facf9bb1dcb0e79d77e7aec1bf6.setIcon(icon_afe6e2da55bf2e05e71e2dfa6a495053);
+        
+    
+        var popup_c42e25031435edc2fbc2cd695fee0531 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c129e0f9ea191584c8e5aba8019c010 = $(`<div id="html_4c129e0f9ea191584c8e5aba8019c010" style="width: 100.0%; height: 100.0%;">Magazyn - Poznań</div>`)[0];
+                popup_c42e25031435edc2fbc2cd695fee0531.setContent(html_4c129e0f9ea191584c8e5aba8019c010);
+            
+        
+
+        marker_37da6facf9bb1dcb0e79d77e7aec1bf6.bindPopup(popup_c42e25031435edc2fbc2cd695fee0531)
+        ;
+
+        
+    
+    
+            var marker_2f5c58e2a6a1035d8eff4d8fecf2c01f = L.marker(
+                [52.5170365, 13.3888599],
+                {}
+            ).addTo(map_b98e91f26f775e4e6c04098dbdc9857c);
+        
+    
+            var icon_fa5e07d858244a5e7075503c2bc41fc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2f5c58e2a6a1035d8eff4d8fecf2c01f.setIcon(icon_fa5e07d858244a5e7075503c2bc41fc6);
+        
+    
+        var popup_ff57986c4a8cce5ecd6508c8cd28962f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e09be61d44f6452eb82eed6c05e2bf9 = $(`<div id="html_4e09be61d44f6452eb82eed6c05e2bf9" style="width: 100.0%; height: 100.0%;">Berlin</div>`)[0];
+                popup_ff57986c4a8cce5ecd6508c8cd28962f.setContent(html_4e09be61d44f6452eb82eed6c05e2bf9);
+            
+        
+
+        marker_2f5c58e2a6a1035d8eff4d8fecf2c01f.bindPopup(popup_ff57986c4a8cce5ecd6508c8cd28962f)
+        ;
+
+        
+    
+    
+            var marker_02d354a599403d6070452385c02d65b9 = L.marker(
+                [51.9383777, 15.5050408],
+                {}
+            ).addTo(map_b98e91f26f775e4e6c04098dbdc9857c);
+        
+    
+            var icon_a057091a9fffbc09a5679a0647195a3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_02d354a599403d6070452385c02d65b9.setIcon(icon_a057091a9fffbc09a5679a0647195a3b);
+        
+    
+        var popup_3f7028b990a4df319511f9582fb0d4d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6454069671ccc40cf1bebfc565982d9 = $(`<div id="html_f6454069671ccc40cf1bebfc565982d9" style="width: 100.0%; height: 100.0%;">Zielona Góra</div>`)[0];
+                popup_3f7028b990a4df319511f9582fb0d4d4.setContent(html_f6454069671ccc40cf1bebfc565982d9);
+            
+        
+
+        marker_02d354a599403d6070452385c02d65b9.bindPopup(popup_3f7028b990a4df319511f9582fb0d4d4)
+        ;
+
+        
+    
+    
+            var poly_line_db636190e8d6f6b7fc99cda32a672d92 = L.polyline(
+                [[52.4006632, 16.91973259178088], [52.5170365, 13.3888599], [51.9383777, 15.5050408], [52.4006632, 16.91973259178088]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": "10", "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_b98e91f26f775e4e6c04098dbdc9857c);
+        
+</script>

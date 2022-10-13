@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+</head>
+<body>
+<br>
+<table>
+<tr><th>Adres magazynu</th><th>Adres miejscowości</th><th>Godzina od</th><th>Godzina do</th><th>ilość pojazdów</th></tr>
+{% for row in rows %}
+    <tr><td>{{row[2]}}</td><td>{{row[3]}}</td><td>{{row[4]}}</td><td>{{row[5]}}</td><td>{{row[1]}}</td><td><a class="formbold-btn-edit" href={{url_for('edit', id=row[0])}}>EDYTUJ</a></td><td><a class="formbold-btn-delete" href={{url_for('delete', id=row[0])}}>USUŃ</a></tr>
+{% endfor %}
+</table>
+<br>
+<div>
+    <a href="/add_data"><button class="formbold-btn-add">DODAJ WIERSZ</button></a>
+</div>
+</body>
+</html>
+
